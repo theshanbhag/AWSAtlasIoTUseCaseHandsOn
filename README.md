@@ -15,44 +15,47 @@ This Demo will walk you through the MongoDB Atlas integration with Kinesis Data 
 * In Atlas go to Network Access section under security. In IP Access List whitelist the IP of system where you are running compass OR Allow access from anywhere. 
 * Download MongoDB compass and install OR Open atlas and navigate to your cluster -> click on connect. Select “Connect using MongoDB Compass” and download the supported version on your machine from the dropdown.
 
-<img >
-<img >
+
+![Valid Document](images/1.png )
+![Valid Document](images/2.png )
+
 
 
 * Copy the connection string, then open MongoDB Compass. Click on “connect to” and paste (Note : Update the connection URL with the <username> and <password> to the one generated in step 1) and Click on connect. 
 * Download the file from here to loading the data to your collection.
 * Create a database AWS and collection IoT.
 
-<img>
+![Valid Document](images/3.png )
 
 
 * Click on ADD DATA and Import File.
 * Import the JSON file to AWS.IoT .
 
-<img >
+![Valid Document](images/4.png )
+![Valid Document](images/5.png )
 
 ### 3. Create Realm Web Application:
 * Log into your MongoDB cloud account. If you do not have an account you can sign up for a free account.
 * Click on the AppService tab. You will be having options to choose from templates. Instead click on “Build your own app”. 
-<img >
+![Valid Document](images/6.png )
  
 * Choose the Database and Service name. Choose the App Deployment model and the preferred region
-<img >
+![Valid Document](images/7.png )
 
 
 * Once confirmed the above parameters, click on “Create App Services”
 * Create the EndPoints to  add an HTTP endpoint to external clients to call over HTTP services
-<img >
+![Valid Document](images/8.png )
 
 * Click the start button
-<img >
+![Valid Document](images/9.png )
 * Click on “Add an Endpoint”
-<img >
+![Valid Document](images/10.png )
 
 * Add “/test” to the endpoint
-<img >
+![Valid Document](images/11.png )
 * Select “Add a new function”
-<img >
+![Valid Document](images/12.png )
 
 * Name the function as “testIoT” and copy the below code to the function
 Code:
@@ -113,32 +116,33 @@ Code:
   ```
 
 
-<img >
+![Valid Document](images/13.png )
 
-* Click Run to test the function and on successful run , click “Save Draft”
-<img >
+* Click click “Save Draft”
+![Valid Document](images/14.png )
 * Click “next” to the information tab which details about the difference between “save” and “deploy”. Note this screen popsup only the first time.
-<img >
+![Valid Document](images/15.png )
 
 * Now Review the code and deploy the application
-<img >
-<img >
+![Valid Document](images/16.png )
+![Valid Document](images/17.png )
 
 * Ensure the deployment is successful
-<img >
+![Valid Document](images/18.png )
 * Click on “Edit Function” by clicking the right mouse button
-<img >
+![Valid Document](images/19.png )
 * Select the “Settings Tab”
-<img >
+![Valid Document](images/20.png )
 
 * Choose the Authentication as “System” and click “Save Draft”. Ensure it is saved successfully.
-<img >
+![Valid Document](images/21.png )
 * Perform the review and deployment one more time.
 
-<img >
-<img >
-<img >
-<img >
+![Valid Document](images/22.png )
+![Valid Document](images/23.png )
+![Valid Document](images/24.png )
+![Valid Document](images/25.png )
+
 
 ### 4. Configure AWS Environment
 * Log into AWS Console and search for Kinesis.
