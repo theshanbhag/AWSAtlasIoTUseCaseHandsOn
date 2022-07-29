@@ -147,12 +147,12 @@ Code:
 ### 4. Configure AWS Environment
 * Log into AWS Console and search for Kinesis.
 * On the Kinesis Data Firehose console
-<img >
+![Valid Document](images/26.png )
 * choose Create delivery stream. Select the source as “Direct PUT”. The Destination as “MongoDB Cloud” and Name the Delivery stream as “MongoDBIntegrationStream”
-<img >
+![Valid Document](images/27.png )
 * Create the DataAPi in App Services and enter the DATA API Endpoint of the Application in AWS Kinesis Firehose Delivery Stream end point.
-<img >
-<img >
+![Valid Document](images/28.png )
+![Valid Document](images/29.png )
 * For API Key, please enter a random value. Right now we are running it without configuring the API key. 
 * For Content encoding, leave it as Disabled.
 * For S3 backup mode, select Failed data only.
@@ -160,7 +160,7 @@ Code:
 * In the IAM role section, configure permissions for your delivery stream by choosing Create or update IAM role.
 * For MongoDB buffer conditions, accept the default MongoDB and Amazon S3 buffer conditions for your stream.  Note that the buffer size should be a value between 1MiB and 16MiB.  Review the limits in MongoDB Atlas documentation.
 * Review your settings and choose Create delivery stream.
-<img >
+![Valid Document](images/30.png )
 
 
 
